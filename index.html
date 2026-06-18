@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HypeWL RP — Serveur GTA V Roleplay</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;600;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ░░ PARTICULES BACKGROUND ░░ -->
+  <canvas id="particles"></canvas>
+
+  <!-- ░░ NAVBAR ░░ -->
+  <nav class="navbar">
+    <div class="nav-logo">
+      <span class="logo-text">HYPE<span class="accent">WL</span></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Accueil</a></li>
+      <li><a href="lore.html">Lore</a></li>
+      <li><a href="mapping.html">Mapping</a></li>
+      <li><a href="reglement.html">Règlement</a></li>
+      <li><a href="factions.html">Factions</a></li>
+      <li><a href="rejoindre.html">Rejoindre</a></li>
+    </ul>
+    <a href="rejoindre.html" class="nav-cta">Jouer maintenant</a>
+    <button class="nav-toggle" id="navToggle">&#9776;</button>
+  </nav>
+
+  <!-- ░░ HERO ░░ -->
+  <section class="hero" id="accueil">
+    <div class="hero-bg-overlay"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge">🎮 SERVEUR GTA V ROLEPLAY</div>
+
+      <div class="hero-logo-wrap">
+        <h1 class="hero-title">
+          <span class="title-hype">HYPE</span><span class="title-wl">WL</span>
+        </h1>
+        <div class="title-rp">ROLEPLAY</div>
+      </div>
+
+      <p class="hero-subtitle">
+        Plonge dans l'univers de <strong>Los Santos</strong>.<br/>
+        Un serveur immersif, une communauté soudée, des histoires sans limites.
+      </p>
+
+      <div class="hero-stats">
+        <div class="stat-card">
+          <span class="stat-num" data-target="500">0</span>
+          <span class="stat-label">Joueurs max</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-card">
+          <span class="stat-num" data-target="120">0</span>
+          <span class="stat-label">En ligne</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-card">
+          <span class="stat-num" data-target="2400">0</span>
+          <span class="stat-label">Membres Discord</span>
+        </div>
+      </div>
+
+      <div class="hero-ctas">
+        <a href="#rejoindre" class="btn btn-primary">
+          <span>Rejoindre le serveur</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#presentation" class="btn btn-ghost">
+          <span>En savoir plus</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-scroll-indicator">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ░░ PRÉSENTATION ░░ -->
+  <section class="presentation" id="presentation">
+    <div class="section-header">
+      <span class="section-tag">À PROPOS</span>
+      <h2 class="section-title">Bienvenue sur <span class="accent">HypeWL RP</span></h2>
+      <p class="section-desc">Un serveur FiveM nouvelle génération conçu pour les passionnés de roleplay sérieux et les amateurs de liberté totale.</p>
+    </div>
+
+    <div class="pres-grid">
+      <div class="pres-card" data-delay="0">
+        <div class="pres-icon">🌆</div>
+        <h3>Los Santos Vivant</h3>
+        <p>Une ville entièrement modifiée avec des scripts custom, des commerces ouverts, des gangs actifs et une économie dynamique.</p>
+      </div>
+      <div class="pres-card" data-delay="100">
+        <div class="pres-icon">👮</div>
+        <h3>Forces de l'ordre</h3>
+        <p>Rejoins la LSPD, la Sheriff's Department ou les pompiers. Des métiers encadrés avec formations et hiérarchies réelles.</p>
+      </div>
+      <div class="pres-card" data-delay="200">
+        <div class="pres-icon">💼</div>
+        <h3>Jobs & Économie</h3>
+        <p>Plus de 30 métiers légaux et illégaux. Deviens chef d'entreprise, livreur, braqueur ou trafiquant — ton choix.</p>
+      </div>
+      <div class="pres-card" data-delay="300">
+        <div class="pres-icon">🚗</div>
+        <h3>Véhicules Customs</h3>
+        <p>Des centaines de véhicules ajoutés, avec système de tuning poussé et garages personnalisés.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ FEATURES ░░ -->
+  <section class="features" id="features">
+    <div class="features-inner">
+      <div class="section-header">
+        <span class="section-tag">FONCTIONNALITÉS</span>
+        <h2 class="section-title">Ce qui nous <span class="accent">différencie</span></h2>
+      </div>
+
+      <div class="features-list">
+        <div class="feature-row">
+          <div class="feature-visual">
+            <div class="feature-icon-big">⚡</div>
+            <div class="feature-glow"></div>
+          </div>
+          <div class="feature-text">
+            <h3>Scripts 100% Custom</h3>
+            <p>Tous nos systèmes sont développés en interne. HUD immersif, inventaire physique, interactions contextuelles — une expérience unique introuvable ailleurs.</p>
+            <ul class="feature-tags">
+              <li>HUD Custom</li>
+              <li>Inventaire 3D</li>
+              <li>Actions contextuelles</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="feature-row reverse">
+          <div class="feature-visual">
+            <div class="feature-icon-big">🎭</div>
+            <div class="feature-glow"></div>
+          </div>
+          <div class="feature-text">
+            <h3>Roleplay Immersif</h3>
+            <p>Système de vie personnage complet : faim, soif, fatigue. Logements à acheter ou louer. Véhicules avec papiers et assurance. La vraie vie, en jeu.</p>
+            <ul class="feature-tags">
+              <li>Système de vie</li>
+              <li>Logements</li>
+              <li>Identité RP</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="feature-row">
+          <div class="feature-visual">
+            <div class="feature-icon-big">💰</div>
+            <div class="feature-glow"></div>
+          </div>
+          <div class="feature-text">
+            <h3>Économie Équilibrée</h3>
+            <p>Banques, blanchiment, bourse, marchés noirs. Une économie simulée avec inflation et événements dynamiques. Accumule ta fortune ou perds tout en une nuit.</p>
+            <ul class="feature-tags">
+              <li>Banque RP</li>
+              <li>Marché noir</li>
+              <li>Entreprises</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ RÈGLES ░░ -->
+  <section class="regles" id="regles">
+    <div class="section-header">
+      <span class="section-tag">CHARTE</span>
+      <h2 class="section-title">Les <span class="accent">règles</span> d'or</h2>
+      <p class="section-desc">Le respect de ces règles garantit une expérience de jeu saine pour tous.</p>
+    </div>
+    <div class="regles-grid">
+      <div class="regle-card">
+        <span class="regle-num">01</span>
+        <h4>RP avant tout</h4>
+        <p>Le roleplay prime sur tout. Chaque action doit avoir un sens narratif cohérent avec ton personnage.</p>
+      </div>
+      <div class="regle-card">
+        <span class="regle-num">02</span>
+        <h4>No Meta-gaming</h4>
+        <p>Les informations hors-jeu (Discord, streams) ne peuvent pas être utilisées in-game.</p>
+      </div>
+      <div class="regle-card">
+        <span class="regle-num">03</span>
+        <h4>No Power-gaming</h4>
+        <p>Tu ne peux pas forcer une action sur un autre joueur sans lui laisser la possibilité de réagir.</p>
+      </div>
+      <div class="regle-card">
+        <span class="regle-num">04</span>
+        <h4>Respect mutuel</h4>
+        <p>La toxicité OOC est sanctionnée immédiatement. Respect des joueurs et du staff en toute circonstance.</p>
+      </div>
+      <div class="regle-card">
+        <span class="regle-num">05</span>
+        <h4>Value Life</h4>
+        <p>Ton personnage valorise sa vie. Aucune action suicidaire gratuite ne sera tolérée.</p>
+      </div>
+      <div class="regle-card">
+        <span class="regle-num">06</span>
+        <h4>Staff is Law</h4>
+        <p>Les décisions du staff sont finales en jeu. Les contestations se font uniquement via ticket Discord.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ REJOINDRE ░░ -->
+  <section class="rejoindre" id="rejoindre">
+    <div class="rejoindre-inner">
+      <div class="section-header">
+        <span class="section-tag">COMMENT JOUER</span>
+        <h2 class="section-title">Rejoins <span class="accent">HypeWL RP</span></h2>
+        <p class="section-desc">Quatre étapes simples pour démarrer ton aventure à Los Santos.</p>
+      </div>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div class="step-content">
+            <h4>Installe FiveM</h4>
+            <p>Télécharge et installe le client FiveM gratuitement depuis le site officiel.</p>
+          </div>
+          <div class="step-line"></div>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-content">
+            <h4>Rejoins Discord</h4>
+            <p>Rejoins notre Discord pour obtenir le whitelist et suivre l'actu du serveur.</p>
+          </div>
+          <div class="step-line"></div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-content">
+            <h4>Fais ta demande WL</h4>
+            <p>Remplis le formulaire de whitelist et passe le test de roleplay en ligne.</p>
+          </div>
+          <div class="step-line"></div>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <div class="step-content">
+            <h4>Lance-toi !</h4>
+            <p>Une fois whitelisté, connecte-toi et commence ton histoire à Los Santos.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cta-buttons">
+        <a href="https://discord.gg/zHMr8frn9m" target="_blank" rel="noopener" class="btn btn-primary btn-large">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 00-5.487 0 12.64 12.64 0 00-.617-1.25.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 00-.041-.106 13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128 10.2 10.2 0 00.372-.292.074.074 0 01.077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 01.078.01c.12.098.246.198.373.292a.077.077 0 01-.006.127 12.299 12.299 0 01-1.873.892.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.839 19.839 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.03z"/></svg>
+          Rejoindre le Discord
+        </a>
+        <a href="#" class="btn btn-outline btn-large">
+          Télécharger FiveM
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ FOOTER ░░ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-text">HYPE<span class="accent">WL</span></span>
+        <p>Le serveur GTA RP nouvelle génération.<br/>Los Santos ne dort jamais.</p>
+      </div>
+      <div class="footer-links">
+        <h5>Navigation</h5>
+        <ul>
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#presentation">Le Serveur</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#regles">Règles</a></li>
+          <li><a href="#rejoindre">Rejoindre</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h5>Communauté</h5>
+        <ul>
+          <li><a href="https://discord.gg/zHMr8frn9m" target="_blank" rel="noopener">Discord</a></li>
+          <li><a href="#">TikTok</a></li>
+          <li><a href="#">YouTube</a></li>
+          <li><a href="#">Twitter / X</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 HypeWL RP — Tous droits réservés. Non affilié à Rockstar Games.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

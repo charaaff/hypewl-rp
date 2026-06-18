@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Règlement Illégal — HypeWL RP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;600;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="pages.css" />
+</head>
+<body>
+  <canvas id="particles"></canvas>
+
+  <nav class="navbar">
+    <div class="nav-logo">
+      <a href="index.html"><span class="logo-text">HYPE<span class="accent">WL</span></span></a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="lore.html">Lore</a></li>
+      <li><a href="mapping.html">Mapping</a></li>
+      <li><a href="reglement.html" class="active">Règlement</a></li>
+      <li><a href="factions.html">Factions</a></li>
+      <li><a href="rejoindre.html">Rejoindre</a></li>
+    </ul>
+    <a href="rejoindre.html" class="nav-cta">Jouer maintenant</a>
+    <button class="nav-toggle" id="navToggle">&#9776;</button>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-bg" style="--accent-color: #E74C3C;"></div>
+    <div class="page-hero-content">
+      <span class="page-hero-tag">🔫 MILIEU CRIMINEL</span>
+      <h1 class="page-hero-title" style="color: #E74C3C; text-shadow: 0 0 40px rgba(231,76,60,0.5);">ILLÉGAL</h1>
+      <p class="page-hero-sub">Règlement avancé pour les joueurs évoluant<br/>dans les milieux criminels de Los Santos.</p>
+    </div>
+    <div class="page-hero-deco"><span class="deco-num">🔴</span></div>
+  </section>
+
+  <!-- SWITCH -->
+  <section class="regl-switch-section">
+    <div class="regl-switch-container">
+      <div class="regl-type-switcher">
+        <a href="reglement.html" class="regl-switch-btn">
+          <span>📑</span> Règlement Général
+        </a>
+        <a href="reglement-illegal.html" class="regl-switch-btn active" style="background: linear-gradient(135deg, #7B1818, #C0392B); border-color: #E74C3C;">
+          <span>🔫</span> Règlement Illégal
+        </a>
+      </div>
+      <p class="regl-switch-desc">Ce règlement s'applique en <strong style="color:#E74C3C;">complément</strong> du règlement général. Les deux doivent être respectés.</p>
+    </div>
+  </section>
+
+  <!-- AVERTISSEMENT -->
+  <div class="illegal-warning">
+    <div class="illegal-warning-inner">
+      <span>⚠️</span>
+      <p>Ce règlement ne remplace pas le règlement général. Toute violation des règles de base reste sanctionnable même dans un contexte criminel. L'illégal ne donne pas tous les droits.</p>
+    </div>
+  </div>
+
+  <!-- CONTENU -->
+  <section class="regl-main-section">
+    <div class="regl-layout">
+
+      <!-- TOC -->
+      <div class="regl-toc">
+        <h3 class="toc-title">Sommaire</h3>
+        <ul class="toc-list">
+          <li><a href="#trafics"><span>01</span> Trafics & Drogues</a></li>
+          <li><a href="#braquages"><span>02</span> Braquages</a></li>
+          <li><a href="#prises-otages"><span>03</span> Prises d'otages</a></li>
+          <li><a href="#guerres"><span>04</span> Guerres de territoire</a></li>
+          <li><a href="#armes"><span>05</span> Armes illégales</a></li>
+          <li><a href="#voitures"><span>06</span> Vol de véhicules</a></li>
+          <li><a href="#gangs"><span>07</span> Gangs & Organisations</a></li>
+          <li><a href="#ratios"><span>08</span> Ratios & Cooldowns</a></li>
+          <li><a href="#sanctions"><span>09</span> Sanctions</a></li>
+        </ul>
+      </div>
+
+      <div class="regl-content">
+
+        <!-- 01 TRAFICS -->
+        <div class="regl-section" id="trafics">
+          <div class="regl-section-header">
+            <div class="regl-section-badge" style="--badge-color: #9B59B6;">💊 SECTION 1</div>
+            <h2>Trafics & Drogues</h2>
+          </div>
+          <div class="regl-rules">
+
+            <div class="rule-item">
+              <div class="rule-icon">🌿</div>
+              <div class="rule-body">
+                <div class="rule-header-line">
+                  <h4>Production & Transformation</h4>
+                  <span class="rule-essentiel">CADRE RP OBLIGATOIRE</span>
+                </div>
+                <p>Toute production de drogue (weed, cocaïne, méth) doit se faire dans un lieu RP cohérent — un lab, une ferme, un entrepôt. Produire en pleine rue ou dans une zone visible sans couverture est interdit. Des gardes doivent sécuriser le périmètre pendant la production.</p>
+              </div>
+            </div>
+
+            <div class="rule-item">
+              <div class="rule-icon">🤝</div>
+              <div class="rule-body">
+                <div class="rule-header-line">
+                  <h4>Deal en ville</h4>
+                  <span class="rule-essentiel">DISCRÉTION EXIGÉE</span>
+                </div>
+                <p>Les deals doivent se faire de façon discrète. Pas de deal à la sortie du commissariat ou devant un hôpital. Le deal à ciel ouvert dans des zones passantes expose à une intervention légitime de la police. Un deal "bruyant" ou ostensible peut entraîner une sanction RP et staff.</p>
+              </div>
+            </div>
+
+            <div class="rule-item">
+              <div class="rule-icon">🔄</div>
+              <div class="rule-body">
+                <div class="rule-header-line">
+                  <h4>Cooldown entre productions</h4>
+                  <span class="rule-essentiel">ANTI-FARM</span>
+                </div>
+                <p>Un cooldown de <strong>45 minutes minimum</strong> est imposé entre deux productions d'un même lab par la même organisation. L'objectif est d'éviter le farm pur sans RP. La production doit s'inscrire dans une logique narrative.</p>
+              </div>
+            </div>
+
+            <div class="rule-item">
+              <div class="rule-icon">🚛</div>
+              <div class="rule-body">
+                <div class="rule-header-line">
+                  <h4>Transport & Livraisons</h4>
+                </div>
+                <p>Le transport de marchandises illégales doit utiliser des véhicules civils banalisés. Toute livraison peut légitimement être interrompue par la police si elle repère un comportement suspect. Accepter l'interception fait partie du jeu.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- 02 BRAQUAGES -->
+        <div class="regl-section" id="braquages">
+          <div class="regl-section-header">
+            <div class="regl-section-badge" style="--badge-color: #E74C3C;">🏦 SECTION 2</div>
+            <h2>Braquages</h2>
+          </div>
+
+          <div class="illegal-table-wrap">
+            <table class="illegal-table">
+              <thead>
+                <tr>
+                  <th>Type de braquage</th>
+                  <th>Attaquants max</th>
+                  <th>Otages</th>
+                  <th>Cooldown</th>
+                  <th>Flics min requis</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Épicerie / Station</td>
+                  <td>2</td>
+                  <td>0–1</td>
+                  <td>30 min</td>
+                  <td>2 en service</td>
+                </tr>
+                <tr>
+                  <td>Bijouterie</td>
+                  <td>4</td>
+                  <td>1–3</td>
+                  <td>1h</td>
+                  <td>3 en service</td>
+                </tr>
+                <tr>
+                  <td>Banque locale</td>
+                  <td>5</td>
+                  <td>1–4</td>
+                  <td>2h</td>
+                  <td>4 en service</td>
+                </tr>
+                <tr class="highlight-row">
+                  <td>Banque centrale (Fleeca)</td>
+                  <td>6</td>
+                  <td>2–5</td>
+                  <td>3h</td>
+                  <td>5 en service</td>
+                </tr>
+                <tr class="highlight-row danger-row">
+                  <td>Réserve Fédérale</td>
+                  <td>8</td>
+                  <td>3–6</td>
+                  <td>6h</td>
+                  <td>6 en service</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="regl-rules" style="margin-top:1.5rem;">
+            <div class="rule-item">
+              <div class="rule-icon">📋</div>
+              <div class="rule-body">
+                <div class="rule-header-line">
+                  <h4>Règles générales des braquages</h4>
+                </div>
+                <ul class="rule-list">
+                  <li>Un plan RP cohérent est obligatoire — pas de braquage "spontané" sans mise en contexte.</li>
+                  <li>Les braqueurs ne peuvent pas exécuter les otages sans raison RP sérieuse et préalablement établie.</li>
+                  <li>Négociation obligatoire avec la police avant toute escalade vers la violence.</li>
+                  <li>Les policiers ne peuvent pas sniper les braqueurs tant qu'une négociation est en cours.</li>
+                  <li>Interdiction de braquage si moins de flics que le minimum requis sont en service.</li>
+                  <li>La fuite fait partie du RP — accepter d'être arrêté est une option valide et encouragée.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 03 PRISES D'OTAGES -->
+        <div class="regl-section" id="prises-otages">
+          <div class="regl-section-header">
+            <div class="regl-section-badge" style="--badge-color: #E67E22;">🤵 SECTION 3</div>
+            <h2>Prises d'otages</h2>
+          </div>
+          <div class="regl-rules">
+
+            <div class="rule-item rule-danger">
+              <div class="rule-icon">⚠️</div>
+              <div class="rule-body">
+                <div class="rule-header-line">
+                  <h4>Consentement de l'otage</h4>
+                  <span class="rule-essentiel badge-danger">OBLIGATOIRE</span>
+                </div>
+                <p>Prendre quelqu'un en otage implique de lui laisser la possibilité de vivre la scène de manière réaliste. L'otage doit être traité avec cohérence narrative. Les humiliations gratuites, actes sexuels ou torture prolongée sans limite sont interdits — le RP doit rester respectueux même dans l'adversité.</p>
+              </div>
+            </div>
+
+            <div class="rule-item">
+              <div class="rule-icon">⏱️</div>
+              <div class="rule-body">
+                <div class="rule-header-line">
+                  <h4>Durée maximale de séquestration</h4>
+                  <span class="rule-essentiel">MAX 45 MINUTES</span>
+                </div>
+                <p>Une prise d'otage ne peut durer plus de <strong>45 minutes de temps réel</strong>. Au-delà, l'otage doit être libéré ou la scène conclue. Les séquestrations longues sans intérêt narratif sont interdites.</p>
+              </div>
+            </div>
+
+            <div class="rule-item">
+              <div class="rule-icon">📞</div>
+              <div class="rule-body">
+                <div class="rule-header-line">
+                  <h4>Demandes de rançon</h4>
+                </div>
+                <p>Une rançon doit être réaliste et négociable. Les demandes délirantes (100 millions, armement illégal massif) sont refusables de plein droit par la police sans être considérées comme du mauvais RP. La police peut bluffer sur ses capacités de paiement.</p>
+              </div>
+            </div>
+
+            <div class="rule-item">
+              <div class="rule-icon">🚁</div>
+              <div class="rule-body">
+                <div class="rule-header-line">
+                  <h4>Intervention policière</h4>
+                </div>
+                <p>La police ne peut pas lancer un assaut tant qu'un otage vivant est visible et utilisé comme bouclier. Une négociation de bonne foi est obligatoire. Un assaut peut être déclenché si les ravisseurs exécutent un otage ou si un danger immédiat et prouvable est établi.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- 04 GUERRES DE TERRITOIRE -->
+        <div class="regl-section" id="guerres">
+          <div class="regl-section-header">
+            <div class="regl-section-badge" style="--badge-color: #E74C3C;">⚔️ SECTION 4</div>
+            <h2>Guerres de territoire</h2>
+          </div>
+          <div class="regl-rules">
+
+            <div class="rule-item rule-danger">
+              <div class="rule-icon">📝</div>
+              <div class="rule-body">
+                <div class="rule-header-line">
+                  <h4>Déclaration de guerre obligatoire</h4>
+                  <span class="rule-essentiel badge-danger">VALIDATION STAFF</span>
+                </div>
+                <p>Toute guerre de territoire doit être <strong>déclarée au staff via ticket Discord</strong> avant d'éclater. Une guerre "surprise" sans contexte narratif préalable est considérée comme du RDM massif. La déclaration doit inclure : les factions impliquées, la raison RP et les zones concernées.</p>
+              </div>
+            </div>
+
+            <div class="rule-item">
+              <div class="rule-icon">👥</div>
+              <div class="rule-body">
+                <div class="rule-header-line">
+                  <h4>Limites d'engagement</h4>
+                  <span class="rule-essentiel">MAX 8 VS 8</span>
+                </div>
+                <p>Un affrontement organisé est limité à <strong>8 personnes par camp</strong>. Au-delà, les participants supplémentaires peuvent être sanctionnés pour avoir "overfloodé" la scène. En dehors des guerres officielles, les bagarres de rue restent limitées à 4v4 maximum.</p>
+              </div>
+            </div>
+
+            <div class="rule-item">
+              <div class="rule-icon">🕊️</div>
+              <div class="rule-body">
+                <div class="rule-header-line">
+                  <h4>Trêve obligatoire</h4>
+                  <span class="rule-essentiel">48H MINIMUM</span>
+                </div>
+                <p>Après chaque affrontement majeur validé (guerre de territoire), une trêve de <strong>48 heures minimum</strong> s'impose entre les deux factions. La reprise des hostilités doit être re-déclarée au staff. Les vendettas personnelles en dehors du cadre de guerre doivent être jouées en RP direct, pas en fusillade ouverte.</p>
+              </div>
+            </div>
+
+            <div class="rule-item">
+              <div class="rule-icon">🌆</div>
+              <div class="rule-body">
+                <div class="rule-header-line">
+                  <h4>Zones civiles protégées</h4>
+                </div>
+                <p>Les affrontements sont interdits dans les zones à forte densité civile (centre-ville, plages de Vespucci, aéroport). Les guerres se jouent dans les quartiers définis comme zones de tension sur la carte du serveur. Un tir civil non impliqué dans la guerre = faute grave.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- 05 ARMES -->
+        <div class="regl-section" id="armes">
+          <div class="regl-section-header">
+            <div class="regl-section-badge" style="--badge-color: #7F8C8D;">🔫 SECTION 5</div>
+            <h2>Armes illégales</h2>
+          </div>
+          <div class="regl-rules">
+
+            <div class="rule-item">
+              <div class="rule-icon">🗂️</div>
+              <div class="rule-body">
+                <div class="rule-header-line">
+                  <h4>Catégories d'armes</h4>
+                </div>
+                <div class="armes-grid">
+                  <div class="arme-cat cat-1">
+                    <span class="arme-cat-label">Catégorie 1</span>
+                    <p>Couteaux, matraques, poings américains</p>
+                    <span class="arme-access">Accès facile</span>
+                  </div>
+                  <div class="arme-cat cat-2">
+                    <span class="arme-cat-label">Catégorie 2</span>
+                    <p>Pistolets, revolvers, shotguns</p>
+                    <span class="arme-access">Réseau criminel</span>
+                  </div>
+                  <div class="arme-cat cat-3">
+                    <span class="arme-cat-label">Catégorie 3</span>
+                    <p>SMG, fusils d'assaut, snipers</p>
+                    <span class="arme-access">Factions établies</span>
+                  </div>
+                  <div class="arme-cat cat-4">
+                    <span class="arme-cat-label">Catégorie 4</span>
+                    <p>RPG, explosifs, armes lourdes</p>
+                    <span class="arme-access">Staff requis</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="rule-item rule-danger">
+              <div class="rule-icon">💣</div>
+              <div class="rule-body">
+                <div class="rule-header-line">
+                  <h4>Armes lourdes & explosifs</h4>
+                  <span class="rule-essentiel badge-danger">AUTORISATION STAFF</span>
+                </div>
+                <p>Les armes de catégorie 4 (RPG, grenades, explosifs) nécessitent une validation staff préalable pour être utilisées en RP. Leur usage non autorisé en dehors d'un événement validé est un ban immédiat. Ces armes sont réservées aux scénarios d'exception.</p>
+              </div>
+            </div>
+
+            <div class="rule-item">
+              <div class="rule-icon">🎒</div>
+              <div class="rule-body">
+                <div class="rule-header-line">
+                  <h4>Port d'arme visible</h4>
+                </div>
+                <p>Sortir une arme en public sans raison RP (intimidation, braquage, confrontation) est un acte criminel visible. La police est en droit d'intervenir et d'ouvrir le feu si l'arme est braquée. Ne dégainez pas une arme si vous n'êtes pas prêt à en assumer les conséquences.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- 06 VOL DE VÉHICULES -->
+        <div class="regl-section" id="voitures">
+          <div class="regl-section-header">
+            <div class="regl-section-badge" style="--badge-color: #F39C12;">🚗 SECTION 6</div>
+            <h2>Vol de véhicules</h2>
+          </div>
+          <div class="regl-rules">
+
+            <div class="rule-item">
+              <div class="rule-icon">🔑</div>
+              <div class="rule-body">
+                <div class="rule-header-line">
+                  <h4>Carjacking</h4>
+                  <span class="rule-essentiel">RP OBLIGATOIRE</span>
+                </div>
+                <p>Un carjacking doit être précédé d'une interaction RP. On ne sort pas un conducteur de sa voiture en silence — menace verbale, arme sortie, mise en situation obligatoire. Le carjacking silencieux (arracher sans mot dire) est du Power Gaming.</p>
+              </div>
+            </div>
+
+            <div class="rule-item">
+              <div class="rule-icon">🔧</div>
+              <div class="rule-body">
+                <div class="rule-header-line">
+                  <h4>Chop Shop & Recel</h4>
+                </div>
+                <p>La revente de véhicules volés doit passer par un chop shop RP. Un véhicule volé ne peut pas être gardé indéfiniment comme véhicule personnel — il doit être découpé, modifié avec de nouveaux papiers (falsifiés RP) ou revendu dans les 24h de temps réel.</p>
+              </div>
+            </div>
+
+            <div class="rule-item">
+              <div class="rule-icon">🚓</div>
+              <div class="rule-body">
+                <div class="rule-header-line">
+                  <h4>Vol de véhicules de service</h4>
+                  <span class="rule-essentiel badge-danger">ENCADRÉ</span>
+                </div>
+                <p>Voler un véhicule de police, pompiers ou EMS nécessite un contexte RP fort (fuite désespérée, scénario validé). Ces véhicules ne peuvent pas être utilisés pour commettre d'autres crimes. Un véhicule de service volé doit être abandonné ou détruit dans l'heure.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- 07 GANGS -->
+        <div class="regl-section" id="gangs">
+          <div class="regl-section-header">
+            <div class="regl-section-badge" style="--badge-color: #9B59B6;">🏴 SECTION 7</div>
+            <h2>Gangs & Organisations criminelles</h2>
+          </div>
+          <div class="regl-rules">
+
+            <div class="rule-item">
+              <div class="rule-icon">📁</div>
+              <div class="rule-body">
+                <div class="rule-header-line">
+                  <h4>Création d'une organisation</h4>
+                  <span class="rule-essentiel">DOSSIER OBLIGATOIRE</span>
+                </div>
+                <p>Toute organisation criminelle officielle doit soumettre un dossier au staff : <strong>nom, couleurs, territoire visé, lore, hiérarchie et minimum 5 membres fondateurs actifs</strong>. Sans validation, le groupe est considéré comme une bande non officielle avec des droits limités (pas de lab dédié, pas de territoire revendiqué).</p>
+              </div>
+            </div>
+
+            <div class="rule-item">
+              <div class="rule-icon">🗺️</div>
+              <div class="rule-body">
+                <div class="rule-header-line">
+                  <h4>Revendication de territoire</h4>
+                </div>
+                <p>Un gang peut revendiquer un territoire après validation staff. Tenir un territoire implique une présence RP régulière. Un territoire abandonné (absence de membres actifs pendant 7 jours) peut être repris par une autre faction sans guerre préalable.</p>
+              </div>
+            </div>
+
+            <div class="rule-item">
+              <div class="rule-icon">🤝</div>
+              <div class="rule-body">
+                <div class="rule-header-line">
+                  <h4>Alliances & Trahisons</h4>
+                </div>
+                <p>Les alliances entre organisations sont libres mais doivent être jouées en RP (réunion, accord verbal, serment). Une alliance déclarée engage les deux parties. Trahir une alliance est autorisé mais doit être RP — pas de retournement de veste silencieux entre deux sessions.</p>
+              </div>
+            </div>
+
+            <div class="rule-item rule-danger">
+              <div class="rule-icon">⛔</div>
+              <div class="rule-body">
+                <div class="rule-header-line">
+                  <h4>Recrutement forcé interdit</h4>
+                  <span class="rule-essentiel badge-danger">INTERDIT</span>
+                </div>
+                <p>Forcer un joueur à rejoindre une organisation sous menace de mort permanente ou de harcèlement est interdit. On peut contraindre RP une personne à travailler pour soi temporairement, mais l'adhésion forcée à long terme constitue du harcèlement.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- 08 RATIOS & COOLDOWNS -->
+        <div class="regl-section" id="ratios">
+          <div class="regl-section-header">
+            <div class="regl-section-badge" style="--badge-color: #1ABC9C;">⏱️ SECTION 8</div>
+            <h2>Ratios & Cooldowns</h2>
+          </div>
+
+          <div class="ratios-grid">
+            <div class="ratio-card">
+              <div class="ratio-icon">🏪</div>
+              <h4>Braquage épicerie</h4>
+              <div class="ratio-details">
+                <span>⏱ Cooldown : <strong>30 min</strong></span>
+                <span>👮 Flics requis : <strong>2</strong></span>
+                <span>👥 Braqueurs : <strong>max 2</strong></span>
+              </div>
+            </div>
+            <div class="ratio-card">
+              <div class="ratio-icon">💎</div>
+              <h4>Bijouterie</h4>
+              <div class="ratio-details">
+                <span>⏱ Cooldown : <strong>1h</strong></span>
+                <span>👮 Flics requis : <strong>3</strong></span>
+                <span>👥 Braqueurs : <strong>max 4</strong></span>
+              </div>
+            </div>
+            <div class="ratio-card">
+              <div class="ratio-icon">🏦</div>
+              <h4>Banque Fleeca</h4>
+              <div class="ratio-details">
+                <span>⏱ Cooldown : <strong>2h</strong></span>
+                <span>👮 Flics requis : <strong>4</strong></span>
+                <span>👥 Braqueurs : <strong>max 5</strong></span>
+              </div>
+            </div>
+            <div class="ratio-card highlight-ratio">
+              <div class="ratio-icon">🏛️</div>
+              <h4>Réserve Fédérale</h4>
+              <div class="ratio-details">
+                <span>⏱ Cooldown : <strong>6h</strong></span>
+                <span>👮 Flics requis : <strong>6</strong></span>
+                <span>👥 Braqueurs : <strong>max 8</strong></span>
+              </div>
+            </div>
+            <div class="ratio-card">
+              <div class="ratio-icon">🌿</div>
+              <h4>Production drogue</h4>
+              <div class="ratio-details">
+                <span>⏱ Cooldown : <strong>45 min</strong></span>
+                <span>👮 Flics requis : <strong>—</strong></span>
+                <span>👥 Membres : <strong>min 2</strong></span>
+              </div>
+            </div>
+            <div class="ratio-card">
+              <div class="ratio-icon">⚔️</div>
+              <h4>Guerre de territoire</h4>
+              <div class="ratio-details">
+                <span>⏱ Trêve après : <strong>48h</strong></span>
+                <span>👮 Staff notifié : <strong>obligatoire</strong></span>
+                <span>👥 Max par camp : <strong>8</strong></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="regl-rules" style="margin-top:2rem;">
+            <div class="rule-item">
+              <div class="rule-icon">📌</div>
+              <div class="rule-body">
+                <div class="rule-header-line">
+                  <h4>Règle du retour sur scène</h4>
+                  <span class="rule-essentiel">NRP INTERDIT</span>
+                </div>
+                <p>Après être sorti d'un coma (mort RP), ton personnage souffre d'amnésie sur la scène. Il est formellement interdit de revenir sur les lieux de ta mort ou de l'action dans les <strong>30 minutes suivant ton respawn</strong>, que ce soit pour te venger ou reprendre le combat.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 09 SANCTIONS -->
+        <div class="regl-section" id="sanctions">
+          <div class="regl-section-header">
+            <div class="regl-section-badge" style="--badge-color: #E74C3C;">⚖️ SECTION 9</div>
+            <h2>Sanctions spécifiques illégal</h2>
+          </div>
+
+          <div class="sanctions-illegal-grid">
+            <div class="sanction-illegal warn">
+              <div class="si-header">
+                <span class="si-icon">⚠️</span>
+                <h4>Avertissement</h4>
+                <span class="si-badge">WARN</span>
+              </div>
+              <ul>
+                <li>Fear RP non respecté (1ère fois)</li>
+                <li>Deal trop visible sans contexte</li>
+                <li>Cooldown non respecté (1ère fois)</li>
+                <li>Sommations incomplètes</li>
+              </ul>
+            </div>
+            <div class="sanction-illegal temp">
+              <div class="si-header">
+                <span class="si-icon">⏱️</span>
+                <h4>Ban temporaire</h4>
+                <span class="si-badge">24H – 7J</span>
+              </div>
+              <ul>
+                <li>RDM / Freekill en contexte criminel</li>
+                <li>Braquage sans flics requis</li>
+                <li>Guerre sans déclaration staff</li>
+                <li>Retour sur scène post-coma</li>
+              </ul>
+            </div>
+            <div class="sanction-illegal perm">
+              <div class="si-header">
+                <span class="si-icon">🚫</span>
+                <h4>Ban définitif</h4>
+                <span class="si-badge">PERMANENT</span>
+              </div>
+              <ul>
+                <li>Usage d'armes lourdes non autorisé</li>
+                <li>RDM massif répété</li>
+                <li>Harcèlement de joueur</li>
+                <li>Cheat / duplication illégale</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- fin regl-content -->
+    </div><!-- fin regl-layout -->
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-text">HYPE<span class="accent">WL</span></span>
+        <p>Le serveur GTA RP nouvelle génération.<br/>Los Santos ne dort jamais.</p>
+      </div>
+      <div class="footer-links">
+        <h5>Navigation</h5>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="lore.html">Lore</a></li>
+          <li><a href="mapping.html">Mapping</a></li>
+          <li><a href="reglement.html">Règlement</a></li>
+          <li><a href="factions.html">Factions</a></li>
+          <li><a href="rejoindre.html">Rejoindre</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h5>Communauté</h5>
+        <ul>
+          <li><a href="https://discord.gg/zHMr8frn9m" target="_blank" rel="noopener">Discord</a></li>
+          <li><a href="#">TikTok</a></li>
+          <li><a href="#">YouTube</a></li>
+          <li><a href="#">Twitter / X</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 HypeWL RP — Tous droits réservés. Non affilié à Rockstar Games.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

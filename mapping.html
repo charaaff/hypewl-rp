@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mapping — HypeWL RP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;600;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="pages.css" />
+</head>
+<body>
+  <canvas id="particles"></canvas>
+
+  <nav class="navbar">
+    <div class="nav-logo">
+      <a href="index.html"><span class="logo-text">HYPE<span class="accent">WL</span></span></a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="lore.html">Lore</a></li>
+      <li><a href="mapping.html" class="active">Mapping</a></li>
+      <li><a href="reglement.html">Règlement</a></li>
+      <li><a href="factions.html">Factions</a></li>
+      <li><a href="rejoindre.html">Rejoindre</a></li>
+    </ul>
+    <a href="rejoindre.html" class="nav-cta">Jouer maintenant</a>
+    <button class="nav-toggle" id="navToggle">&#9776;</button>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-bg" style="--accent-color: #00D4FF;"></div>
+    <div class="page-hero-content">
+      <span class="page-hero-tag">🗺️ WORLD DESIGN</span>
+      <h1 class="page-hero-title">MAPPING</h1>
+      <p class="page-hero-sub">Des dizaines de zones entièrement remodélisées.<br/>Los Santos comme tu ne l'as jamais vu.</p>
+    </div>
+    <div class="page-hero-deco">
+      <span class="deco-num">03</span>
+    </div>
+  </section>
+
+  <!-- STATS MAPPING -->
+  <section class="mapping-stats-section">
+    <div class="mapping-container">
+      <div class="mapping-stats">
+        <div class="mstat">
+          <span class="mstat-num">47</span>
+          <span class="mstat-label">Zones modifiées</span>
+        </div>
+        <div class="mstat-div"></div>
+        <div class="mstat">
+          <span class="mstat-num">12</span>
+          <span class="mstat-label">Intérieurs custom</span>
+        </div>
+        <div class="mstat-div"></div>
+        <div class="mstat">
+          <span class="mstat-num">8</span>
+          <span class="mstat-label">Nouveaux bâtiments</span>
+        </div>
+        <div class="mstat-div"></div>
+        <div class="mstat">
+          <span class="mstat-num">3</span>
+          <span class="mstat-label">Îles additionnelles</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FILTER -->
+  <section class="mapping-main">
+    <div class="mapping-container">
+      <div class="mapping-filters">
+        <button class="filter-btn active" data-filter="all">Tout voir</button>
+        <button class="filter-btn" data-filter="commercial">Commercial</button>
+        <button class="filter-btn" data-filter="criminel">Criminel</button>
+        <button class="filter-btn" data-filter="legal">Légal / Services</button>
+        <button class="filter-btn" data-filter="nature">Extérieur</button>
+      </div>
+
+      <div class="mapping-grid" id="mappingGrid">
+
+        <!-- COMMERCIAL -->
+        <div class="map-card" data-cat="commercial">
+          <div class="map-card-visual">
+            <div class="map-card-emoji">🏪</div>
+            <div class="map-card-overlay">
+              <span class="map-cat-badge commercial">Commercial</span>
+            </div>
+          </div>
+          <div class="map-card-info">
+            <h4>Maze Bank Arena — Centre commercial</h4>
+            <p>L'arène reconvertie abrite désormais un immense mall sur 3 niveaux : boutiques, restauration, salon VIP et parking souterrain custom.</p>
+            <div class="map-card-tags">
+              <span>Shopping</span><span>3 niveaux</span><span>Parking souterrain</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-card" data-cat="commercial">
+          <div class="map-card-visual">
+            <div class="map-card-emoji">🍱</div>
+            <div class="map-card-overlay">
+              <span class="map-cat-badge commercial">Commercial</span>
+            </div>
+          </div>
+          <div class="map-card-info">
+            <h4>Little Seoul — Quartier gastronomique</h4>
+            <p>Little Seoul entièrement remappé avec restaurants ouverts, bars à sushis, supérettes 24/7 et food trucks interactifs.</p>
+            <div class="map-card-tags">
+              <span>Restaurants RP</span><span>Bars</span><span>Quartier vivant</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-card" data-cat="commercial">
+          <div class="map-card-visual">
+            <div class="map-card-emoji">🚗</div>
+            <div class="map-card-overlay">
+              <span class="map-cat-badge commercial">Commercial</span>
+            </div>
+          </div>
+          <div class="map-card-info">
+            <h4>Auto Show — Premium Motors</h4>
+            <p>Un immense concessionnaire custom avec showroom intérieur, atelier de préparation visible et piste de test sur le parking.</p>
+            <div class="map-card-tags">
+              <span>Véhicules neufs</span><span>Showroom</span><span>Atelier</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CRIMINEL -->
+        <div class="map-card" data-cat="criminel">
+          <div class="map-card-visual">
+            <div class="map-card-emoji">⚗️</div>
+            <div class="map-card-overlay">
+              <span class="map-cat-badge criminel">Criminel</span>
+            </div>
+          </div>
+          <div class="map-card-info">
+            <h4>Laboratoire clandestin — Désert</h4>
+            <p>Un lab souterrain dissimulé sous une ferme abandonnée de Blaine County. Accès sécurisé, équipements complets pour la synthèse de substances.</p>
+            <div class="map-card-tags">
+              <span>Accès restreint</span><span>Souterrain</span><span>Sécurisé</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-card" data-cat="criminel">
+          <div class="map-card-visual">
+            <div class="map-card-emoji">🔫</div>
+            <div class="map-card-overlay">
+              <span class="map-cat-badge criminel">Criminel</span>
+            </div>
+          </div>
+          <div class="map-card-info">
+            <h4>Gunshop illégal — Zone portuaire</h4>
+            <p>Caché derrière une façade de ferrailleur, ce dépôt d'armes stocke illégalement des dizaines d'armes. Zone contestée entre factions.</p>
+            <div class="map-card-tags">
+              <span>Trafic d'armes</span><span>Zone contestée</span><span>Intérieur custom</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-card" data-cat="criminel">
+          <div class="map-card-visual">
+            <div class="map-card-emoji">🎰</div>
+            <div class="map-card-overlay">
+              <span class="map-cat-badge criminel">Criminel</span>
+            </div>
+          </div>
+          <div class="map-card-info">
+            <h4>Casino clandestin — Sous-sol</h4>
+            <p>Accessible uniquement sur invitation, ce casino illégal propose jeux d'argent, blanchiment et rencontres de haut vol dans un décor luxueux.</p>
+            <div class="map-card-tags">
+              <span>Invitation only</span><span>Blanchiment</span><span>VIP</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- LÉGAL -->
+        <div class="map-card" data-cat="legal">
+          <div class="map-card-visual">
+            <div class="map-card-emoji">🏥</div>
+            <div class="map-card-overlay">
+              <span class="map-cat-badge legal">Légal</span>
+            </div>
+          </div>
+          <div class="map-card-info">
+            <h4>Hôpital Sandy Shores — Refait</h4>
+            <p>L'hôpital entièrement remappé avec urgences, blocs opératoires, pharmacie et hélipad. Couloirs réalistes et équipements médicaux interactifs.</p>
+            <div class="map-card-tags">
+              <span>EMS</span><span>Intérieur complet</span><span>Safe zone</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-card" data-cat="legal">
+          <div class="map-card-visual">
+            <div class="map-card-emoji">🚔</div>
+            <div class="map-card-overlay">
+              <span class="map-cat-badge legal">Légal</span>
+            </div>
+          </div>
+          <div class="map-card-info">
+            <h4>Commissariat central — Rénové</h4>
+            <p>Le QG de la LSPD entièrement refait : salle des opérations, cellules, armurerie, gymnase et parking sécurisé pour le parc automobile de la police.</p>
+            <div class="map-card-tags">
+              <span>LSPD</span><span>Safe zone</span><span>Intérieur HD</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-card" data-cat="legal">
+          <div class="map-card-visual">
+            <div class="map-card-emoji">⚖️</div>
+            <div class="map-card-overlay">
+              <span class="map-cat-badge legal">Légal</span>
+            </div>
+          </div>
+          <div class="map-card-info">
+            <h4>Palais de justice</h4>
+            <p>Un palais de justice entièrement modélisé avec salle d'audience, bureau du procureur, cabinet d'avocats et salle des archives.</p>
+            <div class="map-card-tags">
+              <span>Justice RP</span><span>Avocats</span><span>Procès</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- NATURE -->
+        <div class="map-card" data-cat="nature">
+          <div class="map-card-visual">
+            <div class="map-card-emoji">🏕️</div>
+            <div class="map-card-overlay">
+              <span class="map-cat-badge nature">Extérieur</span>
+            </div>
+          </div>
+          <div class="map-card-info">
+            <h4>Chilliad — Camp de randonnée</h4>
+            <p>Au sommet du mont Chilliad, un camp de randonneurs custom avec cabanes, feu de camp, télécabine remappée et zone de bivouac.</p>
+            <div class="map-card-tags">
+              <span>Randonnée RP</span><span>Camping</span><span>Vue panoramique</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-card" data-cat="nature">
+          <div class="map-card-visual">
+            <div class="map-card-emoji">🏖️</div>
+            <div class="map-card-overlay">
+              <span class="map-cat-badge nature">Extérieur</span>
+            </div>
+          </div>
+          <div class="map-card-info">
+            <h4>Cayo Privado — Île exclusive</h4>
+            <p>Une île privée accessible en bateau ou hélicoptère, avec villa de luxe, ponton, plongée sous-marine et zone de fête en plein air.</p>
+            <div class="map-card-tags">
+              <span>Île exclusive</span><span>Luxe</span><span>Accès restreint</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-card" data-cat="nature">
+          <div class="map-card-visual">
+            <div class="map-card-emoji">🌵</div>
+            <div class="map-card-overlay">
+              <span class="map-cat-badge nature">Extérieur</span>
+            </div>
+          </div>
+          <div class="map-card-info">
+            <h4>Grand Senora — Zone de course</h4>
+            <p>Le désert de Senora reconverti en circuit de course off-road avec stands, tribune, chronométrage et zone mécanique.</p>
+            <div class="map-card-tags">
+              <span>Course RP</span><span>Circuit off-road</span><span>Events</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="mapping-cta">
+    <div class="mapping-container">
+      <div class="mapping-cta-inner">
+        <h2>Tu veux proposer un <span class="accent">mapping</span> ?</h2>
+        <p>Notre équipe de buildeurs est ouverte aux suggestions de la communauté. Si tu as une idée de lieu à créer, ouvre un ticket sur le Discord.</p>
+        <a href="rejoindre.html" class="btn btn-primary btn-large">Rejoindre le Discord</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-text">HYPE<span class="accent">WL</span></span>
+        <p>Le serveur GTA RP nouvelle génération.<br/>Los Santos ne dort jamais.</p>
+      </div>
+      <div class="footer-links">
+        <h5>Navigation</h5>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="lore.html">Lore</a></li>
+          <li><a href="mapping.html">Mapping</a></li>
+          <li><a href="reglement.html">Règlement</a></li>
+          <li><a href="factions.html">Factions</a></li>
+          <li><a href="rejoindre.html">Rejoindre</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h5>Communauté</h5>
+        <ul>
+          <li><a href="https://discord.gg/zHMr8frn9m" target="_blank" rel="noopener">Discord</a></li>
+          <li><a href="#">TikTok</a></li>
+          <li><a href="#">YouTube</a></li>
+          <li><a href="#">Twitter / X</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 HypeWL RP — Tous droits réservés. Non affilié à Rockstar Games.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script src="mapping.js"></script>
+</body>
+</html>

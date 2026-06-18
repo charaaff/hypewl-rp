@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Factions — HypeWL RP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;600;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="pages.css" />
+</head>
+<body>
+  <canvas id="particles"></canvas>
+
+  <nav class="navbar">
+    <div class="nav-logo">
+      <a href="index.html"><span class="logo-text">HYPE<span class="accent">WL</span></span></a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="lore.html">Lore</a></li>
+      <li><a href="mapping.html">Mapping</a></li>
+      <li><a href="reglement.html">Règlement</a></li>
+      <li><a href="factions.html" class="active">Factions</a></li>
+      <li><a href="rejoindre.html">Rejoindre</a></li>
+    </ul>
+    <a href="rejoindre.html" class="nav-cta">Jouer maintenant</a>
+    <button class="nav-toggle" id="navToggle">&#9776;</button>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-bg" style="--accent-color: #F39C12;"></div>
+    <div class="page-hero-content">
+      <span class="page-hero-tag">⚔️ ORGANISATIONS</span>
+      <h1 class="page-hero-title">FACTIONS</h1>
+      <p class="page-hero-sub">Légaux, criminels, neutres.<br/>Choisis ton camp. Forge ton destin.</p>
+    </div>
+    <div class="page-hero-deco">
+      <span class="deco-num">04</span>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="faction-intro">
+    <div class="faction-container">
+      <div class="faction-type-tabs">
+        <button class="ftab active" data-type="all">Toutes</button>
+        <button class="ftab" data-type="legal">Légales</button>
+        <button class="ftab" data-type="criminal">Criminelles</button>
+        <button class="ftab" data-type="neutral">Neutres</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FACTIONS LÉGALES -->
+  <section class="factions-section" id="factions-legal" data-type="legal">
+    <div class="faction-container">
+      <div class="fsection-header">
+        <span class="fsection-badge legal-badge">🔵 LÉGALES</span>
+        <h2>Institutions officielles</h2>
+      </div>
+      <div class="factions-grid">
+
+        <div class="faction-card" data-type="legal">
+          <div class="faction-header" style="--faction-color: #2980B9;">
+            <div class="faction-emblem">🚔</div>
+            <div class="faction-title-block">
+              <h3>LSPD</h3>
+              <span>Los Santos Police Department</span>
+            </div>
+            <div class="faction-status open">Recrutement ouvert</div>
+          </div>
+          <div class="faction-body">
+            <p>La principale force de l'ordre de Los Santos. Patrouilles, interventions, enquêtes. Divisée en unités : patrouille, SWAT, enquêteurs, brigade des stups.</p>
+            <div class="faction-details">
+              <div class="fd-item"><span>Membres</span><strong>32 actifs</strong></div>
+              <div class="fd-item"><span>Hiérarchie</span><strong>6 grades</strong></div>
+              <div class="fd-item"><span>Accès armes</span><strong>Standard + lourdes</strong></div>
+            </div>
+            <div class="faction-perks">
+              <span>🚗 Véhicules dédiés</span>
+              <span>📻 Radio sécurisée</span>
+              <span>🏛️ Accès commissariat</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="faction-card" data-type="legal">
+          <div class="faction-header" style="--faction-color: #8B4513;">
+            <div class="faction-emblem">🤠</div>
+            <div class="faction-title-block">
+              <h3>BCSO</h3>
+              <span>Blaine County Sheriff's Office</span>
+            </div>
+            <div class="faction-status open">Recrutement ouvert</div>
+          </div>
+          <div class="faction-body">
+            <p>Les shérifs du comté de Blaine. Juridiction sur les zones rurales, autoroutes et Paleto Bay. Ambiance plus décontractée que la LSPD, mais tout aussi efficace.</p>
+            <div class="faction-details">
+              <div class="fd-item"><span>Membres</span><strong>18 actifs</strong></div>
+              <div class="fd-item"><span>Zone</span><strong>Blaine County</strong></div>
+              <div class="fd-item"><span>Spécialité</span><strong>Rural & autoroutes</strong></div>
+            </div>
+            <div class="faction-perks">
+              <span>🚁 Hélicoptère</span>
+              <span>🐕 K9 Unit</span>
+              <span>🏕️ Zone rurale</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="faction-card" data-type="legal">
+          <div class="faction-header" style="--faction-color: #E74C3C;">
+            <div class="faction-emblem">🚑</div>
+            <div class="faction-title-block">
+              <h3>EMS</h3>
+              <span>Emergency Medical Services</span>
+            </div>
+            <div class="faction-status open">Recrutement ouvert</div>
+          </div>
+          <div class="faction-body">
+            <p>Médecins urgentistes, infirmiers, secouristes. Sans eux, personne ne se relève. L'EMS intervient sur tous les blessés, quel que soit leur camp.</p>
+            <div class="faction-details">
+              <div class="fd-item"><span>Membres</span><strong>14 actifs</strong></div>
+              <div class="fd-item"><span>Neutralité</span><strong>Totale</strong></div>
+              <div class="fd-item"><span>Accès</span><strong>Hôpitaux</strong></div>
+            </div>
+            <div class="faction-perks">
+              <span>🏥 Intouchables</span>
+              <span>💊 Stocks médicaux</span>
+              <span>🚁 Air rescue</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FACTIONS CRIMINELLES -->
+  <section class="factions-section" id="factions-criminal" data-type="criminal">
+    <div class="faction-container">
+      <div class="fsection-header">
+        <span class="fsection-badge criminal-badge">🔴 CRIMINELLES</span>
+        <h2>Organisations illégales</h2>
+      </div>
+      <div class="factions-grid">
+
+        <div class="faction-card" data-type="criminal">
+          <div class="faction-header" style="--faction-color: #9B59B6;">
+            <div class="faction-emblem">💜</div>
+            <div class="faction-title-block">
+              <h3>Les Neons</h3>
+              <span>Gang des quartiers bas</span>
+            </div>
+            <div class="faction-status closed">Sur invitation</div>
+          </div>
+          <div class="faction-body">
+            <p>Nés dans les rues de LSIA, les Neons ont bâti leur empire sur la drogue, les vols de véhicules et le contrôle du port. Leur couleur : le violet. Leur loi : la rue.</p>
+            <div class="faction-details">
+              <div class="fd-item"><span>Membres</span><strong>28 actifs</strong></div>
+              <div class="fd-item"><span>Territoire</span><strong>Port & LSIA</strong></div>
+              <div class="fd-item"><span>Activité</span><strong>Drogue, vols</strong></div>
+            </div>
+            <div class="faction-perks">
+              <span>🏭 Entrepôts</span>
+              <span>🔫 Armurerie privée</span>
+              <span>🚗 Chop shop</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="faction-card" data-type="criminal">
+          <div class="faction-header" style="--faction-color: #E67E22;">
+            <div class="faction-emblem">🦅</div>
+            <div class="faction-title-block">
+              <h3>Cartel del Aguila</h3>
+              <span>Cartel mexicain réorganisé</span>
+            </div>
+            <div class="faction-status closed">Sur invitation</div>
+          </div>
+          <div class="faction-body">
+            <p>Les survivants des anciens cartels se sont regroupés sous une nouvelle bannière. Trafic international, cocaïne, contrebande. Opèrent depuis Paleto Bay.</p>
+            <div class="faction-details">
+              <div class="fd-item"><span>Membres</span><strong>22 actifs</strong></div>
+              <div class="fd-item"><span>Territoire</span><strong>Paleto Bay</strong></div>
+              <div class="fd-item"><span>Activité</span><strong>Trafic international</strong></div>
+            </div>
+            <div class="faction-perks">
+              <span>🌵 Labs désert</span>
+              <span>⚓ Réseau maritime</span>
+              <span>💰 Blanchiment</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="faction-card" data-type="criminal">
+          <div class="faction-header" style="--faction-color: #2C3E50;">
+            <div class="faction-emblem">🕴️</div>
+            <div class="faction-title-block">
+              <h3>Le Syndicat</h3>
+              <span>Organisation clandestine</span>
+            </div>
+            <div class="faction-status vip">Très sélectif</div>
+          </div>
+          <div class="faction-body">
+            <p>Des cols blancs qui jouent dans l'ombre. Corruption, manipulation financière, extorsion de haut vol. Personne ne connaît vraiment leur nombre ni leurs visages.</p>
+            <div class="faction-details">
+              <div class="fd-item"><span>Membres</span><strong>??? actifs</strong></div>
+              <div class="fd-item"><span>Territoire</span><strong>Downtown</strong></div>
+              <div class="fd-item"><span>Activité</span><strong>Corruption & finance</strong></div>
+            </div>
+            <div class="faction-perks">
+              <span>🏦 Banques</span>
+              <span>👔 Couverture légale</span>
+              <span>🎰 Casino clandestin</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FACTIONS NEUTRES -->
+  <section class="factions-section" id="factions-neutral" data-type="neutral">
+    <div class="faction-container">
+      <div class="fsection-header">
+        <span class="fsection-badge neutral-badge">⚪ NEUTRES</span>
+        <h2>Organisations indépendantes</h2>
+      </div>
+      <div class="factions-grid">
+
+        <div class="faction-card" data-type="neutral">
+          <div class="faction-header" style="--faction-color: #1ABC9C;">
+            <div class="faction-emblem">📰</div>
+            <div class="faction-title-block">
+              <h3>LS Tribune</h3>
+              <span>Presse indépendante</span>
+            </div>
+            <div class="faction-status open">Recrutement ouvert</div>
+          </div>
+          <div class="faction-body">
+            <p>Les journalistes, photographes et reporters de Los Santos. Couvrent les événements, enquêtent sur les scandales, diffusent l'info. Neutres mais pas naïfs.</p>
+            <div class="faction-details">
+              <div class="fd-item"><span>Membres</span><strong>8 actifs</strong></div>
+              <div class="fd-item"><span>Neutralité</span><strong>Officielle</strong></div>
+              <div class="fd-item"><span>Accès</span><strong>Zones de presse</strong></div>
+            </div>
+            <div class="faction-perks">
+              <span>📸 Presse accrédité</span>
+              <span>🎙️ Radio locale</span>
+              <span>🛡️ Protection presse</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="faction-card" data-type="neutral">
+          <div class="faction-header" style="--faction-color: #F39C12;">
+            <div class="faction-emblem">⚖️</div>
+            <div class="faction-title-block">
+              <h3>Barreau de LS</h3>
+              <span>Cabinet d'avocats</span>
+            </div>
+            <div class="faction-status open">Recrutement ouvert</div>
+          </div>
+          <div class="faction-body">
+            <p>Avocats de la défense ou du parquet. Participent aux procès RP, négocient les peines, défendent les accusés. Peuvent travailler pour n'importe quel client.</p>
+            <div class="faction-details">
+              <div class="fd-item"><span>Membres</span><strong>6 actifs</strong></div>
+              <div class="fd-item"><span>Neutralité</span><strong>Par choix</strong></div>
+              <div class="fd-item"><span>Revenus</span><strong>Honoraires</strong></div>
+            </div>
+            <div class="faction-perks">
+              <span>🏛️ Palais de justice</span>
+              <span>📁 Archives légales</span>
+              <span>💼 Tous clients</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA CRÉER FACTION -->
+  <section class="faction-create-cta">
+    <div class="faction-container">
+      <div class="fcta-inner">
+        <div class="fcta-icon">🏴</div>
+        <h2>Crée ta propre <span class="accent">faction</span></h2>
+        <p>Tu as une idée de faction originale ? Organisation secrète, gang de rue, corporation légale, culte mystique ? Soumets ton dossier au staff sur Discord.</p>
+        <div class="fcta-requirements">
+          <div class="req-item"><span>✅</span> Min. 5 membres fondateurs</div>
+          <div class="req-item"><span>✅</span> Lore écrit & cohérent</div>
+          <div class="req-item"><span>✅</span> Hiérarchie définie</div>
+          <div class="req-item"><span>✅</span> Validation staff</div>
+        </div>
+        <a href="rejoindre.html" class="btn btn-primary btn-large">Soumettre un dossier</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-text">HYPE<span class="accent">WL</span></span>
+        <p>Le serveur GTA RP nouvelle génération.<br/>Los Santos ne dort jamais.</p>
+      </div>
+      <div class="footer-links">
+        <h5>Navigation</h5>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="lore.html">Lore</a></li>
+          <li><a href="mapping.html">Mapping</a></li>
+          <li><a href="reglement.html">Règlement</a></li>
+          <li><a href="factions.html">Factions</a></li>
+          <li><a href="rejoindre.html">Rejoindre</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h5>Communauté</h5>
+        <ul>
+          <li><a href="https://discord.gg/zHMr8frn9m" target="_blank" rel="noopener">Discord</a></li>
+          <li><a href="#">TikTok</a></li>
+          <li><a href="#">YouTube</a></li>
+          <li><a href="#">Twitter / X</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 HypeWL RP — Tous droits réservés. Non affilié à Rockstar Games.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script src="factions.js"></script>
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rejoindre — HypeWL RP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;600;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="pages.css" />
+</head>
+<body>
+  <canvas id="particles"></canvas>
+
+  <nav class="navbar">
+    <div class="nav-logo">
+      <a href="index.html"><span class="logo-text">HYPE<span class="accent">WL</span></span></a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="lore.html">Lore</a></li>
+      <li><a href="mapping.html">Mapping</a></li>
+      <li><a href="reglement.html">Règlement</a></li>
+      <li><a href="factions.html">Factions</a></li>
+      <li><a href="rejoindre.html" class="active">Rejoindre</a></li>
+    </ul>
+    <a href="rejoindre.html" class="nav-cta">Jouer maintenant</a>
+    <button class="nav-toggle" id="navToggle">&#9776;</button>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-bg" style="--accent-color: #2ECC71;"></div>
+    <div class="page-hero-content">
+      <span class="page-hero-tag">🎮 COMMENT JOUER</span>
+      <h1 class="page-hero-title">REJOINDRE</h1>
+      <p class="page-hero-sub">Prêt à débarquer à Los Santos ?<br/>Suis ces étapes et rejoins la communauté HypeWL.</p>
+    </div>
+    <div class="page-hero-deco">
+      <span class="deco-num">05</span>
+    </div>
+  </section>
+
+  <!-- PRÉREQUIS -->
+  <section class="join-section">
+    <div class="join-container">
+      <div class="section-header">
+        <span class="section-tag">PRÉREQUIS</span>
+        <h2 class="section-title">Ce qu'il te <span class="accent">faut</span></h2>
+      </div>
+      <div class="prereq-grid">
+        <div class="prereq-card">
+          <div class="prereq-icon">🎮</div>
+          <h4>GTA V légal</h4>
+          <p>Une copie légale de GTA V (Steam, Epic Games, Rockstar) est obligatoire. Les versions pirates ne sont pas supportées.</p>
+          <span class="prereq-status required">Obligatoire</span>
+        </div>
+        <div class="prereq-card">
+          <div class="prereq-icon">🖥️</div>
+          <h4>Client FiveM</h4>
+          <p>FiveM est le client de modification multijoueur qui permet de jouer sur des serveurs RP. Gratuit et facile à installer.</p>
+          <span class="prereq-status required">Obligatoire</span>
+        </div>
+        <div class="prereq-card">
+          <div class="prereq-icon">🎤</div>
+          <h4>Microphone</h4>
+          <p>Un micro fonctionnel est impératif. Le roleplay vocal est au cœur de l'expérience. Les casques gaming sont parfaits.</p>
+          <span class="prereq-status required">Obligatoire</span>
+        </div>
+        <div class="prereq-card">
+          <div class="prereq-icon">💬</div>
+          <h4>Discord</h4>
+          <p>Notre Discord est le hub central : annonces, tickets, whitelist, événements. Rejoins-le avant tout.</p>
+          <span class="prereq-status required">Obligatoire</span>
+        </div>
+        <div class="prereq-card">
+          <div class="prereq-icon">📖</div>
+          <h4>Lire le règlement</h4>
+          <p>Le règlement doit être lu et accepté avant la candidature. L'ignorance des règles ne protège pas des sanctions.</p>
+          <span class="prereq-status required">Obligatoire</span>
+        </div>
+        <div class="prereq-card">
+          <div class="prereq-icon">💡</div>
+          <h4>Bases du RP</h4>
+          <p>Une connaissance minimale du roleplay est attendue. Des guides sont disponibles sur le Discord pour les débutants.</p>
+          <span class="prereq-status recommended">Recommandé</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ÉTAPES -->
+  <section class="join-steps-section">
+    <div class="join-container">
+      <div class="section-header">
+        <span class="section-tag">PROCESSUS</span>
+        <h2 class="section-title">Les <span class="accent">étapes</span> pour jouer</h2>
+      </div>
+      <div class="join-steps-grid">
+        <div class="join-step-card">
+          <div class="jsc-num">01</div>
+          <div class="jsc-icon">⬇️</div>
+          <h4>Installe FiveM</h4>
+          <p>Télécharge FiveM depuis le site officiel fivem.net. Lance l'installer, il détecte automatiquement ton GTA V. Environ 5 minutes.</p>
+          <a href="#" class="btn btn-outline" style="margin-top:1rem; font-size:0.72rem;">Télécharger FiveM</a>
+        </div>
+        <div class="join-step-card">
+          <div class="jsc-num">02</div>
+          <div class="jsc-icon">💬</div>
+          <h4>Rejoins Discord</h4>
+          <p>Clique sur le lien d'invitation Discord ci-dessous. Vérifie ton compte, accepte les règles du Discord et accède au salon #whitelist.</p>
+          <a href="#" class="btn btn-primary" style="margin-top:1rem; font-size:0.72rem;">Discord HypeWL</a>
+        </div>
+        <div class="join-step-card">
+          <div class="jsc-num">03</div>
+          <div class="jsc-icon">📝</div>
+          <h4>Candidature WL</h4>
+          <p>Remplis le formulaire de whitelist dans Discord. Présente ton personnage, son background, ses motivations. Sois créatif et cohérent.</p>
+        </div>
+        <div class="join-step-card">
+          <div class="jsc-num">04</div>
+          <div class="jsc-icon">🧪</div>
+          <h4>Test de RP</h4>
+          <p>Un admin te contacte pour un court entretien RP en vocal (15-20 min). Il teste ta capacité à improviser et à incarner ton personnage.</p>
+        </div>
+        <div class="join-step-card">
+          <div class="jsc-num">05</div>
+          <div class="jsc-icon">✅</div>
+          <h4>Validation</h4>
+          <p>Si ta candidature est acceptée, tu reçois ton rôle Whitelisté sur Discord et l'accès au serveur FiveM dans les 24h.</p>
+        </div>
+        <div class="join-step-card highlight-step">
+          <div class="jsc-num">06</div>
+          <div class="jsc-icon">🎮</div>
+          <h4>Lance-toi !</h4>
+          <p>Connecte-toi sur FiveM, recherche "HypeWL RP" dans la liste des serveurs. Los Santos t'attend. Bonne chance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq-section">
+    <div class="join-container">
+      <div class="section-header">
+        <span class="section-tag">FAQ</span>
+        <h2 class="section-title">Questions <span class="accent">fréquentes</span></h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q">C'est quoi la whitelist ? <span>+</span></button>
+          <div class="faq-a"><p>La whitelist est un système de sélection qui garantit que tous les joueurs ont lu les règles et comprennent le RP. Elle évite les "trolls" et maintient la qualité du jeu.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Combien de temps prend la validation ? <span>+</span></button>
+          <div class="faq-a"><p>Généralement entre 24 et 72h après ta candidature. En période de forte demande, ça peut prendre jusqu'à 5 jours. Sois patient, c'est dans l'intérêt de tous.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Puis-je créer plusieurs personnages ? <span>+</span></button>
+          <div class="faq-a"><p>Oui. Chaque joueur peut avoir jusqu'à 3 personnages actifs. Chaque personnage a son propre inventaire, argent et histoire. Ils ne peuvent pas s'entraider (meta-gaming).</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Ma candidature a été refusée, que faire ? <span>+</span></button>
+          <div class="faq-a"><p>Tu peux représenter ta candidature après 7 jours. Lis attentivement les retours du staff pour comprendre les raisons du refus et améliorer ton dossier.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">FiveM est-il gratuit ? <span>+</span></button>
+          <div class="faq-a"><p>Oui, FiveM est entièrement gratuit. Tu as seulement besoin de GTA V (qui lui est payant). FiveM ne modifie pas ton installation GTA V originale.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Y a-t-il des VIP ou avantages payants ? <span>+</span></button>
+          <div class="faq-a"><p>Il existe des rangs de soutien qui donnent accès à des cosmétiques RP (tenues, plaques) mais jamais d'avantages gameplay. Le pay-to-win est banni sur HypeWL RP.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-text">HYPE<span class="accent">WL</span></span>
+        <p>Le serveur GTA RP nouvelle génération.<br/>Los Santos ne dort jamais.</p>
+      </div>
+      <div class="footer-links">
+        <h5>Navigation</h5>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="lore.html">Lore</a></li>
+          <li><a href="mapping.html">Mapping</a></li>
+          <li><a href="reglement.html">Règlement</a></li>
+          <li><a href="factions.html">Factions</a></li>
+          <li><a href="rejoindre.html">Rejoindre</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h5>Communauté</h5>
+        <ul>
+          <li><a href="https://discord.gg/zHMr8frn9m" target="_blank" rel="noopener">Discord</a></li>
+          <li><a href="#">TikTok</a></li>
+          <li><a href="#">YouTube</a></li>
+          <li><a href="#">Twitter / X</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 HypeWL RP — Tous droits réservés. Non affilié à Rockstar Games.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script src="rejoindre.js"></script>
+</body>
+</html>
