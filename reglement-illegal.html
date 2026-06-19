@@ -71,6 +71,8 @@
       <div class="regl-toc">
         <h3 class="toc-title">Sommaire</h3>
         <ul class="toc-list">
+          <li><a href="#hierarchie"><span>00</span> Hiérarchie des groupes</a></li>
+          <li><a href="#business"><span>00B</span> Business & Catégories</a></li>
           <li><a href="#trafics"><span>01</span> Trafics & Drogues</a></li>
           <li><a href="#braquages"><span>02</span> Braquages</a></li>
           <li><a href="#prises-otages"><span>03</span> Prises d'otages</a></li>
@@ -84,6 +86,217 @@
       </div>
 
       <div class="regl-content">
+
+        <!-- 00 HIÉRARCHIE -->
+        <div class="regl-section" id="hierarchie">
+          <div class="regl-section-header">
+            <div class="regl-section-badge" style="--badge-color: #E74C3C;">👑 SECTION 00</div>
+            <h2>Hiérarchie des groupes illégaux</h2>
+            <p class="regl-section-sub">Chaque groupe évolue dans une chaîne stricte. Monter en grade ouvre des droits supplémentaires.</p>
+          </div>
+
+          <!-- PYRAMIDE -->
+          <div class="hier-pyramid">
+
+            <div class="hier-tier tier-gm">
+              <div class="hier-tier-label">
+                <span class="hier-rank">👑</span>
+                <div>
+                  <strong>GM</strong>
+                  <span class="hier-rank-sub">Grand Master</span>
+                </div>
+              </div>
+              <div class="hier-tier-rights">
+                <span class="hier-tag hier-tag-mission">Missions ✓</span>
+                <span class="hier-tag hier-tag-business">Business ✓</span>
+                <span class="hier-tag hier-tag-sell">Vend → Orga</span>
+              </div>
+              <p class="hier-tier-desc">Sommet de la chaîne criminelle. Les GM donnent les business et missionnent tous les groupes. Leur marchandise (armes, ressources rares) ne peut être vendue <strong>qu'aux Orga</strong>.</p>
+            </div>
+
+            <div class="hier-arrow">▼</div>
+
+            <div class="hier-tier tier-orga">
+              <div class="hier-tier-label">
+                <span class="hier-rank">🔱</span>
+                <div>
+                  <strong>Orga</strong>
+                  <span class="hier-rank-sub">Organisation</span>
+                </div>
+              </div>
+              <div class="hier-tier-rights">
+                <span class="hier-tag hier-tag-business">Business ✓</span>
+                <span class="hier-tag hier-tag-sell">Vend → Label</span>
+              </div>
+              <p class="hier-tier-desc">Les Orga achètent la marchandise auprès des GM et ne peuvent la revendre <strong>qu'aux Label</strong>. Aucune vente directe aux Gang ou Indé.</p>
+            </div>
+
+            <div class="hier-arrow">▼</div>
+
+            <div class="hier-tier tier-label">
+              <div class="hier-tier-label">
+                <span class="hier-rank">🏷️</span>
+                <div>
+                  <strong>Label</strong>
+                  <span class="hier-rank-sub">Structure intermédiaire</span>
+                </div>
+              </div>
+              <div class="hier-tier-rights">
+                <span class="hier-tag hier-tag-business">Business ✓</span>
+                <span class="hier-tag hier-tag-sell">Vend → Gang</span>
+              </div>
+              <p class="hier-tier-desc">Les Label s'approvisionnent auprès des Orga et revendent <strong>uniquement aux Gang</strong>. Ils jouent un rôle de distributeur intermédiaire.</p>
+            </div>
+
+            <div class="hier-arrow">▼</div>
+
+            <div class="hier-tier tier-gang">
+              <div class="hier-tier-label">
+                <span class="hier-rank">🔫</span>
+                <div>
+                  <strong>Gang</strong>
+                  <span class="hier-rank-sub">Gang de rue</span>
+                </div>
+              </div>
+              <div class="hier-tier-rights">
+                <span class="hier-tag hier-tag-business">Business ✓</span>
+                <span class="hier-tag hier-tag-sell">Vend → Indé</span>
+              </div>
+              <p class="hier-tier-desc">Premier rang donnant accès aux business. Les Gang s'approvisionnent auprès des Label et peuvent revendre <strong>aux Indé</strong>. C'est ici que commence la vraie criminalité organisée.</p>
+            </div>
+
+            <div class="hier-arrow">▼</div>
+
+            <div class="hier-tier tier-inde">
+              <div class="hier-tier-label">
+                <span class="hier-rank">👤</span>
+                <div>
+                  <strong>Indé</strong>
+                  <span class="hier-rank-sub">Indépendant</span>
+                </div>
+              </div>
+              <div class="hier-tier-rights">
+                <span class="hier-tag hier-tag-locked">Pas de business</span>
+                <span class="hier-tag hier-tag-sell">Achète → Gang</span>
+              </div>
+              <p class="hier-tier-desc">Bas de la chaîne. Les Indé n'ont <strong>pas accès aux business</strong>. Ils s'approvisionnent auprès des Gang uniquement. Pour progresser, ils doivent intégrer un Gang reconnu par le staff.</p>
+            </div>
+
+          </div>
+
+          <!-- RÈGLE BUSINESS -->
+          <div class="hier-rule-box">
+            <span class="hier-rule-icon">⚠️</span>
+            <div>
+              <strong>Règle fondamentale</strong>
+              <p>Toute vente en dehors de la chaîne autorisée est <strong>strictement interdite</strong>. Un GM ne peut pas vendre directement à un Gang ou un Indé. Un Label ne peut pas sauter le Gang et vendre aux Indé. Le non-respect de cette chaîne entraîne des sanctions et peut provoquer une rétrogradation de rang.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- 00B BUSINESS -->
+        <div class="regl-section" id="business">
+          <div class="regl-section-header">
+            <div class="regl-section-badge" style="--badge-color: #F39C12;">💼 BUSINESS</div>
+            <h2>Business disponibles par catégorie</h2>
+            <p class="regl-section-sub">Chaque catégorie de groupe débloque des business spécifiques. Monter en catégorie via dossier staff ouvre des activités plus rentables.</p>
+          </div>
+
+          <!-- GRILLE 3 CATÉGORIES -->
+          <div class="biz-grid">
+
+            <div class="biz-cat cat1">
+              <div class="biz-cat-header">
+                <span class="biz-cat-icon">🟢</span>
+                <div>
+                  <span class="biz-cat-num">Catégorie 1</span>
+                  <strong>Gang</strong>
+                </div>
+              </div>
+              <ul class="biz-list">
+                <li>🌿 Weed</li>
+                <li>🔪 Arme blanche</li>
+                <li>📦 Recel : Objet de rue</li>
+                <li>🎒 Recel : Objet cambu</li>
+                <li>🔑 Vente matos : Lockpick</li>
+                <li>💾 Vente matos : Clé USB</li>
+              </ul>
+            </div>
+
+            <div class="biz-cat cat2">
+              <div class="biz-cat-header">
+                <span class="biz-cat-icon">🟠</span>
+                <div>
+                  <span class="biz-cat-num">Catégorie 2</span>
+                  <strong>MC / Organisation</strong>
+                </div>
+              </div>
+              <p class="biz-cat-note">Inclut tous les business Cat. 1 +</p>
+              <ul class="biz-list">
+                <li>🧪 Crack</li>
+                <li>⚗️ Meth</li>
+                <li>💉 Héroïne</li>
+                <li>🔫 Arme légère</li>
+                <li>🔹 Munitions légères</li>
+                <li>🔸 Munitions lourdes</li>
+                <li>🚂 Vente matos : Train / Ammunition</li>
+              </ul>
+              <div class="biz-restricted">
+                <span>⛔</span> Arme moyenne : <strong>non disponible</strong>
+              </div>
+            </div>
+
+            <div class="biz-cat cat3">
+              <div class="biz-cat-header">
+                <span class="biz-cat-icon">🔴</span>
+                <div>
+                  <span class="biz-cat-num">Catégorie 3</span>
+                  <strong>Cartel / Mafia</strong>
+                </div>
+              </div>
+              <p class="biz-cat-note">Inclut tous les business Cat. 1 et 2 +</p>
+              <ul class="biz-list">
+                <li>❄️ Coke</li>
+                <li>🪖 Arme lourde</li>
+                <li>🏦 Vente matos : Banque / Bijouterie</li>
+              </ul>
+            </div>
+
+          </div>
+
+          <!-- INFOS CLÉS -->
+          <div class="biz-infos">
+            <h4 class="biz-infos-title">📌 Informations clés</h4>
+            <div class="biz-infos-grid">
+              <div class="biz-info-card">
+                <span>🏢</span>
+                <p>Chaque groupe a un point d'achat pour son business dans son MLO (sauf labo d'arme à feu et de drogue, ou autre business selon les possibilités).</p>
+              </div>
+              <div class="biz-info-card">
+                <span>⚔️</span>
+                <p>Un groupe Cat. 1 peut attaquer un groupe Cat. 2 ou 3 pour récupérer son business, mais <strong>ne pourra pas l'utiliser</strong>. Il devra le revendre ou le rendre. Même règle pour Cat. 2 sur Cat. 3.</p>
+              </div>
+              <div class="biz-info-card">
+                <span>📁</span>
+                <p>Limite : <strong>1 business max</strong>. Si un 2e business est obtenu via guerre, 1 semaine pour rendre l'un des deux.</p>
+              </div>
+              <div class="biz-info-card">
+                <span>⏱️</span>
+                <p>Pour obtenir un business : <strong>minimum 1 semaine de jeu</strong> une fois le dossier du groupe validé par le staff.</p>
+              </div>
+              <div class="biz-info-card">
+                <span>📈</span>
+                <p>L'évolution de catégorie est possible selon la lore du groupe et ce qu'il apporte en jeu. Dossier staff obligatoire pour valider le passage.</p>
+              </div>
+              <div class="biz-info-card highlight-info">
+                <span>⛔</span>
+                <p>Les business d'<strong>armes</strong> sont réservés aux Orga (Cat. 2+). Un Gang ne peut en aucun cas en posséder un, même temporairement.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
 
         <!-- 01 TRAFICS -->
         <div class="regl-section" id="trafics">

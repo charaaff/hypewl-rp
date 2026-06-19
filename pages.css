@@ -1339,6 +1339,271 @@
   color: var(--gray-light);
 }
 
+/* ── HIÉRARCHIE GROUPES ILLÉGAUX ──── */
+
+.hier-pyramid {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-top: 1.5rem;
+}
+
+.hier-tier {
+  border-radius: 10px;
+  padding: 1.2rem 1.5rem;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-left: 4px solid;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  transition: transform 0.2s;
+}
+
+.hier-tier:hover { transform: translateX(4px); }
+
+.tier-gm    { border-left-color: #F1C40F; background: rgba(241,196,15,0.06); }
+.tier-orga  { border-left-color: #E74C3C; background: rgba(231,76,60,0.06); margin-left: 1.5rem; }
+.tier-label { border-left-color: #E67E22; background: rgba(230,126,34,0.06); margin-left: 3rem; }
+.tier-gang  { border-left-color: #9B59B6; background: rgba(155,89,182,0.06); margin-left: 4.5rem; }
+.tier-inde  { border-left-color: #7F8C8D; background: rgba(127,140,141,0.06); margin-left: 6rem; }
+
+.hier-tier-label {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.hier-rank {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.hier-tier-label strong {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  display: block;
+  line-height: 1;
+}
+
+.tier-gm    .hier-tier-label strong { color: #F1C40F; }
+.tier-orga  .hier-tier-label strong { color: #E74C3C; }
+.tier-label .hier-tier-label strong { color: #E67E22; }
+.tier-gang  .hier-tier-label strong { color: #9B59B6; }
+.tier-inde  .hier-tier-label strong { color: #95A5A6; }
+
+.hier-rank-sub {
+  font-family: var(--font-ui);
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  color: var(--gray-mid);
+}
+
+.hier-tier-rights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.hier-tag {
+  font-family: var(--font-ui);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  font-weight: 700;
+}
+
+.hier-tag-mission  { background: rgba(52,152,219,0.2); color: #3498DB; }
+.hier-tag-business { background: rgba(46,204,113,0.2); color: #2ECC71; }
+.hier-tag-sell     { background: rgba(231,76,60,0.2);  color: #E74C3C; }
+.hier-tag-locked   { background: rgba(127,140,141,0.2); color: #95A5A6; }
+
+.hier-tier-desc {
+  font-size: 0.83rem;
+  color: var(--gray-light);
+  line-height: 1.55;
+  margin: 0;
+}
+
+.hier-arrow {
+  text-align: left;
+  padding-left: 0.5rem;
+  color: rgba(255,255,255,0.2);
+  font-size: 1rem;
+  line-height: 1.2;
+  margin-left: 1rem;
+}
+
+/* Règle business */
+.hier-rule-box {
+  margin-top: 1.5rem;
+  background: rgba(231, 76, 60, 0.08);
+  border: 1px solid rgba(231, 76, 60, 0.3);
+  border-radius: 10px;
+  padding: 1.2rem 1.5rem;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.hier-rule-icon {
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.hier-rule-box strong {
+  display: block;
+  font-family: var(--font-ui);
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  color: #E74C3C;
+  margin-bottom: 0.4rem;
+}
+
+.hier-rule-box p {
+  font-size: 0.83rem;
+  color: var(--gray-light);
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* ── BUSINESS CATÉGORIES ─────────── */
+
+.biz-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.biz-cat {
+  border-radius: 12px;
+  padding: 1.4rem;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-top: 3px solid;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.biz-cat.cat1 { border-top-color: #2ECC71; background: rgba(46,204,113,0.05); }
+.biz-cat.cat2 { border-top-color: #F39C12; background: rgba(243,156,18,0.05); }
+.biz-cat.cat3 { border-top-color: #E74C3C; background: rgba(231,76,60,0.05); }
+
+.biz-cat-header {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.biz-cat-icon { font-size: 1.2rem; }
+
+.biz-cat-num {
+  font-family: var(--font-ui);
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  color: var(--gray-mid);
+  display: block;
+}
+
+.biz-cat-header strong {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  display: block;
+  line-height: 1.1;
+}
+
+.cat1 .biz-cat-header strong { color: #2ECC71; }
+.cat2 .biz-cat-header strong { color: #F39C12; }
+.cat3 .biz-cat-header strong { color: #E74C3C; }
+
+.biz-cat-note {
+  font-size: 0.75rem;
+  color: var(--gray-mid);
+  font-style: italic;
+  margin: 0;
+}
+
+.biz-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.biz-list li {
+  font-size: 0.83rem;
+  color: var(--gray-light);
+  padding: 0.3rem 0.6rem;
+  background: rgba(255,255,255,0.03);
+  border-radius: 6px;
+  border-left: 2px solid rgba(255,255,255,0.1);
+}
+
+.biz-restricted {
+  margin-top: 0.4rem;
+  font-size: 0.78rem;
+  color: #E74C3C;
+  background: rgba(231,76,60,0.1);
+  border: 1px solid rgba(231,76,60,0.25);
+  border-radius: 6px;
+  padding: 0.4rem 0.7rem;
+}
+
+/* Infos clés */
+.biz-infos {
+  margin-top: 1.5rem;
+}
+
+.biz-infos-title {
+  font-family: var(--font-ui);
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  color: #F39C12;
+  margin-bottom: 1rem;
+}
+
+.biz-infos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.8rem;
+}
+
+.biz-info-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  gap: 0.7rem;
+  align-items: flex-start;
+}
+
+.biz-info-card.highlight-info {
+  background: rgba(231,76,60,0.08);
+  border-color: rgba(231,76,60,0.25);
+}
+
+.biz-info-card span {
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.biz-info-card p {
+  font-size: 0.8rem;
+  color: var(--gray-light);
+  line-height: 1.5;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .biz-grid { grid-template-columns: 1fr; }
+  .biz-infos-grid { grid-template-columns: 1fr; }
+  .hier-tier { margin-left: 0 !important; }
+}
+
 /* ── RÈGLEMENT ILLÉGAL ────────────── */
 
 .illegal-warning {
