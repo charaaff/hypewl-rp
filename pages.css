@@ -1471,9 +1471,13 @@
 
 .biz-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
   margin-top: 1.5rem;
+}
+
+.biz-grid-4 {
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .biz-cat {
@@ -1486,9 +1490,10 @@
   gap: 0.8rem;
 }
 
-.biz-cat.cat1 { border-top-color: #2ECC71; background: rgba(46,204,113,0.05); }
-.biz-cat.cat2 { border-top-color: #F39C12; background: rgba(243,156,18,0.05); }
-.biz-cat.cat3 { border-top-color: #E74C3C; background: rgba(231,76,60,0.05); }
+.biz-cat.cat1      { border-top-color: #2ECC71; background: rgba(46,204,113,0.05); }
+.biz-cat.cat2      { border-top-color: #F39C12; background: rgba(243,156,18,0.05); }
+.biz-cat.cat-label { border-top-color: #9B59B6; background: rgba(155,89,182,0.05); }
+.biz-cat.cat3      { border-top-color: #E74C3C; background: rgba(231,76,60,0.05); }
 
 .biz-cat-header {
   display: flex;
@@ -1513,9 +1518,10 @@
   line-height: 1.1;
 }
 
-.cat1 .biz-cat-header strong { color: #2ECC71; }
-.cat2 .biz-cat-header strong { color: #F39C12; }
-.cat3 .biz-cat-header strong { color: #E74C3C; }
+.cat1      .biz-cat-header strong { color: #2ECC71; }
+.cat2      .biz-cat-header strong { color: #F39C12; }
+.cat-label .biz-cat-header strong { color: #9B59B6; }
+.cat3      .biz-cat-header strong { color: #E74C3C; }
 
 .biz-cat-note {
   font-size: 0.75rem;
@@ -1550,6 +1556,17 @@
   border: 1px solid rgba(231,76,60,0.25);
   border-radius: 6px;
   padding: 0.4rem 0.7rem;
+}
+
+.biz-coming-soon {
+  margin-top: 0.4rem;
+  font-size: 0.78rem;
+  color: #9B59B6;
+  background: rgba(155,89,182,0.1);
+  border: 1px solid rgba(155,89,182,0.25);
+  border-radius: 6px;
+  padding: 0.4rem 0.7rem;
+  font-style: italic;
 }
 
 /* Infos clés */
@@ -1598,8 +1615,12 @@
   margin: 0;
 }
 
+@media (max-width: 1100px) {
+  .biz-grid, .biz-grid-4 { grid-template-columns: repeat(2, 1fr); }
+}
+
 @media (max-width: 900px) {
-  .biz-grid { grid-template-columns: 1fr; }
+  .biz-grid, .biz-grid-4 { grid-template-columns: 1fr; }
   .biz-infos-grid { grid-template-columns: 1fr; }
   .hier-tier { margin-left: 0 !important; }
 }
